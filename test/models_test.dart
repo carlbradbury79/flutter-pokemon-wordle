@@ -7,9 +7,14 @@ import 'package:flutter_pokemon_wordle/models/guess_response.dart';
 void main() {
   group('DailyPokemon', () {
     test('fromJson parses correctly', () {
-      final json = {'date': '2024-01-15', 'pokemonNumber': 25};
+      final json = {
+        'date': '2024-01-15',
+        'pokemonNumber': 25,
+        'pokemonNameLength': 10,
+      };
       final result = DailyPokemon.fromJson(json);
       expect(result.pokemonNumber, 25);
+      expect(result.pokemonNameLength, 10);
     });
   });
 
