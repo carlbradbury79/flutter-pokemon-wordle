@@ -234,7 +234,7 @@ class _GameScreenState extends State<GameScreen> {
           const Text('🎯 ', style: TextStyle(fontSize: 18)),
           if (_dailyPokemon != null)
             Text(
-              'Today\'s Pokémon is #${_dailyPokemon!.pokemonNumber}',
+              'Today\'s Pokémon is #${_dailyPokemon!.pokemonNumber} (${_dailyPokemon!.pokemonNameLength} letters)',
               style: theme.textTheme.titleSmall?.copyWith(
                 color: theme.colorScheme.onPrimaryContainer,
                 fontWeight: FontWeight.w600,
